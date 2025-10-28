@@ -35,7 +35,7 @@ const UpdatePlace = () => {
     const fetchPlace = async () => {
       try {
         const responseData = await sendRequest(
-          `http://localhost:5000/api/places/${placeId}`
+          `https://place-blog-1.onrender.com/api/places/${placeId}`
         );
 
         setLoadedPlace(responseData.place);
@@ -61,7 +61,7 @@ const UpdatePlace = () => {
     event.preventDefault();
     try {
       await sendRequest(
-        `http://localhost:5000/api/places/${placeId}`,
+        `https://place-blog-1.onrender.com/api/places/${placeId}`,
         "PATCH",
         JSON.stringify({
           title: formState.inputs.title.value,

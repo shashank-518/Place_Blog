@@ -12,7 +12,7 @@ const User = () => {
     const fetchrequest = async () => {
       try {
         const responseData = await sendRequest(
-          "http://localhost:5000/api/users"
+          "https://place-blog-1.onrender.com/api/users"
         );
 
         setLoadedData(responseData.users);

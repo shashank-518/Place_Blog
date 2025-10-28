@@ -24,7 +24,7 @@ const PlaceItem = (props) => {
     setShowConfirmModal(false);
     try {
       await sendRequest(
-        `http://localhost:5000/api/places/${props.id}`,
+        `https://place-blog-1.onrender.com/api/places/${props.id}`,
         "DELETE",
         null,
         { Authorization: "Bearer " + auth.token }
@@ -76,7 +76,7 @@ const PlaceItem = (props) => {
 
           <div className="place-image">
             <img
-              src={`http://localhost:5000/${props.imageURL}`}
+              src={`https://place-blog-1.onrender.com/${props.imageURL}`}
               alt={props.title}
             />
           </div>
