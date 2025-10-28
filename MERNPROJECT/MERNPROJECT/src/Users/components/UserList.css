@@ -1,0 +1,17 @@
+.users-list {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.center {
+  text-align: center;
+  color: white;
+}

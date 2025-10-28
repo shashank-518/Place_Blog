@@ -1,0 +1,45 @@
+.error-modal__text {
+  color: #333;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0.5rem 1rem;
+}
+
+.error-modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 1rem;
+}
+
+.error-modal__button {
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out, transform 0.15s ease-in-out;
+}
+
+.error-modal__button:hover {
+  background-color: #d62828;
+  transform: scale(1.03);
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .error-modal__text {
+    color: #f3f3f3;
+  }
+
+  .error-modal__button {
+    background-color: #ef4444;
+  }
+
+  .error-modal__button:hover {
+    background-color: #dc2626;
+  }
+}

@@ -1,0 +1,37 @@
+/* Container for empty list */
+.place-list__empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 60vh;
+}
+
+.place-list__empty-card {
+  padding: 2rem 3rem;
+  border-radius: 1.2rem;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.place-list__empty-card h2 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid layout for places */
+.place-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  background: #f8fafc;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.place-list li {
+  list-style: none;
+}

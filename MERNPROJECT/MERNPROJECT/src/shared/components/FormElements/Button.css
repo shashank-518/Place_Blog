@@ -1,0 +1,63 @@
+.button {
+  font: inherit;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.4rem;
+  cursor: pointer;
+  background: #2563eb; /* blue */
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.button:hover,
+.button:active {
+  background: #1e4fd6;
+}
+
+/* Sizes */
+.button--small {
+  font-size: 0.9rem;
+  padding: 0.4rem 1rem;
+}
+
+.button--large {
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+}
+
+/* Inverse button (white background, blue text) */
+.button--inverse {
+  background: white;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
+
+.button--inverse:hover,
+.button--inverse:active {
+  background: #2563eb;
+  color: white;
+}
+
+/* Danger button (red) */
+.button--danger {
+  background: #e11d48; /* red */
+}
+
+.button--danger:hover,
+.button--danger:active {
+  background: #be123c;
+}
+
+/* Disabled state */
+.button:disabled,
+.button:disabled:hover,
+.button:disabled:active {
+  background: #ccc;
+  color: #666;
+  border-color: #ccc;
+  cursor: not-allowed;
+}

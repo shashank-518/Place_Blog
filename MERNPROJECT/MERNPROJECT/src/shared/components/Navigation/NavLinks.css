@@ -1,0 +1,46 @@
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;              /* ✅ puts all <li> in a single row */
+  align-items: center;
+  gap: 1.5rem;                /* space between items */
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background-color: yellow;
+  color: black;
+  border-radius: 4px;
+}
+
+/* Style the Logout button to match */
+.nav-links button {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-links button:hover {
+  background-color: white;
+  color: #1f3bb3;
+}

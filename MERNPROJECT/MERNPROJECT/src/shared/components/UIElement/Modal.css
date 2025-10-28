@@ -1,0 +1,80 @@
+/* Base modal style */
+.modal {
+  position: fixed;
+  z-index: 50;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 32rem;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+/* Header */
+.modal__header {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Content */
+.modal__content {
+  padding: 1.5rem;
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+.modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Animation classes (match CSSTransition) */
+.modal-enter {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.95);
+}
+
+.modal-enter-active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.modal-exit {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-exit-active {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.95);
+  transition: all 0.2s ease-in-out;
+}
+
+/* Optional dark mode */
+@media (prefers-color-scheme: dark) {
+  .modal {
+    background: rgba(31, 41, 55, 0.9);
+    border: 1px solid #374151;
+    color: #f9fafb;
+  }
+  .modal__header {
+    border-color: #374151;
+  }
+  .modal__footer {
+    border-color: #374151;
+  }
+}

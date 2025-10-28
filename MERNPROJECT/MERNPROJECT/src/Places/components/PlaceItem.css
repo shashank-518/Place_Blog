@@ -1,0 +1,83 @@
+.place-item {
+  list-style: none;
+  margin: 2rem 0;
+}
+
+.place-card {
+  position: relative;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background: #fff;
+  transition: all 0.3s ease;
+  border: 1px solid #eee;
+}
+
+.place-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.place-image {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.place-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.place-card:hover .place-image img {
+  transform: scale(1.05);
+}
+
+.place-info {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.place-info h2 {
+  font-size: 1.6rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.place-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.place-info h3 {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #888;
+}
+
+.place-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+.delete-warning {
+  text-align: center;
+  color: #444;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.map-container {
+  height: 300px;
+  width: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
