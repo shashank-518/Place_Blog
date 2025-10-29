@@ -1,4 +1,4 @@
-.main-header {
+/* .main-header {
   background: #1d3eb1;
   color: white;
   padding: 0.8rem 2rem;
@@ -21,7 +21,7 @@
 .main-navigation__header-nav {
   display: flex;
   align-items: center;
-  gap: 1.5rem; /* space between nav links */
+  gap: 1.5rem; 
 }
 
 .nav-links {
@@ -49,4 +49,121 @@
 .nav-links li button:hover {
   color: yellow;
   color: black;
+}  */
+
+.main-header {
+  background: rgb(5, 23, 29);
+  color: white;
+  padding: 0.8rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* === Hamburger Menu Button === */
+.main-navigation__menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.8rem;
+  height: 1.4rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.main-navigation__menu-btn span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+}
+
+/* === Title === */
+.main-navigation__title a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* === Header Nav === */
+.main-navigation__header-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* === Nav Links === */
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links li a,
+.nav-links li button {
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li button:hover {
+      color: black;; /* yellow highlight */
+  transform: scale(1.05);
+}
+
+/* === Responsive Layouts === */
+@media (max-width: 768px) {
+  /* Show hamburger button */
+  .main-navigation__menu-btn {
+    display: flex;
+  }
+
+  /* Hide normal nav links in header */
+  .main-navigation__header-nav {
+    display: none;
+  }
+
+  .main-header {
+    padding: 0.8rem 1.2rem;
+  }
+
+  /* ✅ Text center only on mobile */
+  .main-navigation__title {
+    text-align: center;
+    flex: 1; /* ensures it centers between menu and empty space */
+  }
+
+  .main-navigation__title a {
+    font-size: 1.3rem;
+    display: inline-block;
+  }
+}
+
+
+/* Small devices */
+@media (max-width: 480px) {
+  .main-header {
+    padding: 0.6rem 1rem;
+  }
+
+  .main-navigation__title a {
+    font-size: 1.1rem;
+  }
+
+  .main-navigation__menu-btn {
+    width: 1.5rem;
+    height: 1.2rem;
+  }
 }

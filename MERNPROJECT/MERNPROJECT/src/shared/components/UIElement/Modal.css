@@ -72,6 +72,7 @@
     color: #f9fafb;
   }
   .modal__header {
+    color: white;
     border-color: #374151;
   }
   .modal__footer {

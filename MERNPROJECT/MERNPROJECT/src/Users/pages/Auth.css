@@ -1,15 +1,63 @@
-.authentication__header {
-    color: white;
-    text-align: center;
-  }
-  
-  .authentication {
-    width: 90%;
-    max-width: 25rem;
-    margin: 7rem auto;
-    text-align: center;
-  }
-  
-  .authentication form {
-    margin-bottom: 1rem;
-  }
+.authentication {
+  width: 90%;
+  max-width: 25rem;
+  margin: 5rem auto;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 10px;
+  background: white;
+  text-align: center;
+}
+
+.authentication h2 {
+  color: #2c2c2c;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.authentication hr {
+  width: 50%;
+  margin: 1rem auto;
+  border: none;
+  height: 2px;
+  background: #ccc;
+  border-radius: 2px;
+}
+
+.authentication form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.authentication input,
+.authentication label {
+  text-align: left;
+}
+
+.authentication button {
+  margin-top: 1rem;
+}
+
+.authentication button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.authentication .image-upload {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* For dark mode (if you support theme switching) */
+body.dark .authentication {
+  background: #1e1e1e;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.15);
+}
+
+body.dark .authentication hr {
+  background: #555;
+}

@@ -22,7 +22,7 @@ const NavLinks = () => {
         { login.isLoggedIn &&  <NavLink to={"places/new"}  > Add Places </NavLink> }
     </li>
     <li>
-        { !login.isLoggedIn &&<NavLink to={"/auth"}  > Authentication </NavLink>}
+        { !login.isLoggedIn &&<NavLink to={"/auth"}  > Login </NavLink>}
     </li>
 
     <li>

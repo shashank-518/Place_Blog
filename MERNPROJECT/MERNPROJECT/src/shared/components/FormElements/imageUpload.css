@@ -9,9 +9,7 @@
   gap: 1rem;
 }
 
-.image-upload.center {
-  justify-content: center;
-}
+
 
 .image-upload__preview {
   width: 180px;
